@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #212121;
+    /* background: linear-gradient(rgb(255, 124, 1), #e4ff1a);
+    -webkit-text-fill-color: transparent; */
+  }
+  .container {
+    padding: 10px;
+    /* background-color: #212121; */
+    /* height: ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1,
+  .phide {
+    color: white;
+    text-align: center;
+  }
+  .phide {
+    padding: 24px;
+    display: none;
+    font-weight: 200;
+  }
+  .time {
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  button {
+      /* width: auto; */
+    width: 180px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  button:hover::before {
+    width: 100%;
+  }
+
+  button:hover {
+    color: black;
+  }
+
+  button:active:before {
+    background: #b9b9b9;
+  }
+  .foot{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    
+  }
+  .foot,.fclass,.fcredit{
+    background-color: rgb(76, 74, 74);
+    color: white;
+    padding: 10px 10px;
+  }
+  footer a{
+    color: white;
+    background-color: rgb(76, 74, 74);
+    text-decoration: none;
+    padding: 10px 10px;
+  }
+ .flink:hover{
+  color: #212121;
+  background-color: white;
+  padding: 20px 10px;
+
+ }
