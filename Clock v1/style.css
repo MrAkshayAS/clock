@@ -6,10 +6,14 @@
     /* background: linear-gradient(rgb(255, 124, 1), #e4ff1a);
     -webkit-text-fill-color: transparent; */
   }
+  p::selection,a::selection,button::selection{
+    background-color: white;
+    color: #212121;
+  }
   .container {
     padding: 10px;
     /* background-color: #212121; */
-    /* height: ; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +29,7 @@
     display: none;
     font-weight: 200;
   }
+  
   .time {
     background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
@@ -75,8 +80,7 @@
     display: flex;
     justify-content: space-between;
     position: sticky;
-    bottom: 0;
-    
+    bottom: 0;    
   }
   .foot,.fclass,.fcredit{
     background-color: rgb(76, 74, 74);
@@ -93,5 +97,55 @@
   color: #212121;
   background-color: white;
   padding: 20px 10px;
-
+ }
+ @media (max-width: 856px)  {
+  h1{
+    font-size: larger;
+  }
+  .container{
+    display: block;
+    height: auto;
+  }
+  .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #btn1,#btn2,#btn3{
+    margin: 15px;
+  }
+  .phide {
+    padding: 2px;
+    font-size: small;
+  }
+  .foot{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .foot,.fclass,.fcredit{
+    font-size: smaller;
+    padding: 5px 5px;
+  }
+  footer a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+  }
+ .flink:hover{
+  background-color: white;
+  padding: 9px 10px;
+ }
+ }
+ @media (max-width: 292px) {
+  .fclass{
+    padding: 0;
+  }
+  .linkedin{
+    display: none;
+  }
  }
