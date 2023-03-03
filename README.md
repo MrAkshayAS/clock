@@ -1,1 +1,1 @@
-# Project For Clock website Using HTML CSS And JavaScript 
+# Responsive website Project Using HTML CSS And JavaScript 
